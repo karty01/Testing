@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+ 
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+body{
+    width: clamp(430px 100%, 100%);
+    background-image: url(./gui-pack/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem 0 0 0;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    top: 0;
+    background-image: url(./gui-pack/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -4;
+}
+ .top-flower{
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    top: 0;
+    z-index: -3;
+    display: flex;
+    background-image: url(./gui-pack/leaves.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.bottom-flower{
+    width: 100%;
+    height: 3rem;
+    bottom: 0;
+    transform: rotate(-180deg);
+    z-index: -3;
+    display: flex;
+    background-image: url(./gui-pack/leaves.png);
+    background-position: center;
+    background-size: contain;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+    position: relative;
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-image: url(./gui-pack/wood.png);
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.buttons{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.left{
+    width: 7rem;
+    height: 5rem;
+    background-image: url(./gui-pack/left-arrow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.right{
+    width: 7rem;
+    height: 5rem;
+    background-image: url(./gui-pack/right-arrow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.buy-button{
+    position: absolute;
+    width: 6rem;
+    height: 2rem;
+    background-color: green;
+    border-radius: 10px;
+    border: 1px solid #723600;
+    bottom: 0;
+    margin: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFF33;
+    -webkit-text-stroke-width: 1px; /* Width of the stroke */
+      -webkit-text-stroke-color: #723600; /* Color of the stroke */
+      
+}
+.top{
+    width: 14rem;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    background-image: url(./gui-pack/button.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.top h2{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFF33;
+    -webkit-text-stroke-width: 1px; /* Width of the stroke */
+      -webkit-text-stroke-color: #723600; /* Color of the stroke */
+      
+}
+.profile-photo{
+    width: 120px;
+    height: 120px;
+    background-image: url(./gui-pack/profile-photo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: relative;
+    padding: .5rem;
+}
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer{
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home{
+    background-image: url(./gui-pack/home.png);
+}
+
+#play{
+    background-image: url(/gui-pack/play.png);
+}
+#tasks{
+    background-image: url(/gui-pack/boost.png);
+}
+#friends{
+    background-image: url(/gui-pack/Boost\ Button.png);
+}
+
+.footer:hover{
+    cursor: pointer;
+}
